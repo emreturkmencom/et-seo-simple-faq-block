@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "et-seo-simple-faq-block/faq-item",
+	"version": "1.0.0",
+	"title": "FAQ Item",
+	"category": "widgets",
+	"icon": "minus",
+	"parent": ["et-seo-simple-faq-block/faq"],
+	"description": "A single FAQ item.",
+	"textdomain": "et-seo-simple-faq-block",
+	"attributes": {
+		"question": {
+			"type": "string",
+			"source": "html",
+			"selector": ".faq-question-text"
+		},
+		"answer": {
+			"type": "string",
+			"source": "html",
+			"selector": ".faq-answer"
+		},
+		"headingTag": {
+			"type": "string",
+			"default": "h3"
+		}
+	},
+	"supports": {
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"editorScript": "file:./index.js"
+}

@@ -1,0 +1,11 @@
+.et-seo-faq-container {
+	border: 1px dashed #ccc;
+	padding: 10px;
+	
+	// Ensure the details tag is open in the editor or acts like it
+	.wp-block-et-seo-simple-faq-block-faq-item {
+		border: 1px solid #eee;
+		padding: 10px;
+		background: #fff;
+	}
+}

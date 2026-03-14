@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "et-seo-simple-faq-block/faq",
+  "version": "1.0.0",
+  "title": "SEO Simple FAQ",
+  "category": "widgets",
+  "icon": "editor-help",
+  "description": "Add an SEO-friendly FAQ section with schema markup.",
+  "textdomain": "et-seo-simple-faq-block",
+  "attributes": {
+    "styleTheme": {
+      "type": "string",
+      "default": "theme-default"
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

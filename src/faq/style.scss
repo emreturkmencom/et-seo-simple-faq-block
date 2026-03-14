@@ -1,0 +1,98 @@
+.et-seo-faq-container {
+	margin-bottom: 20px;
+	
+	.wp-block-et-seo-simple-faq-block-faq-item {
+		margin-bottom: 10px;
+	}
+
+	details {
+		width: 100%;
+		
+		summary {
+			cursor: pointer;
+			list-style: none;
+			position: relative;
+			padding: 15px 40px 15px 15px;
+			font-weight: 600;
+			display: flex;
+			align-items: center;
+			transition: all 0.3s ease;
+			
+			&::-webkit-details-marker {
+				display: none;
+			}
+			
+			&::after {
+				content: '+';
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 20px;
+				transition: transform 0.3s ease;
+			}
+
+			.faq-question-text {
+				margin: 0;
+				font-size: 1.1em;
+			}
+		}
+
+		&[open] summary::after {
+			content: '-';
+			transform: translateY(-50%) rotate(180deg);
+		}
+
+		.faq-answer {
+			padding: 15px;
+			margin-top: 0;
+			border-top: 1px solid rgba(0,0,0,0.05);
+		}
+	}
+
+	// Themes
+	&.theme-default {
+		details {
+			border-bottom: 1px solid #ddd;
+			summary {
+				padding-left: 0;
+			}
+			.faq-answer {
+				padding-left: 0;
+				border-top: none;
+			}
+		}
+	}
+
+	&.theme-boxed {
+		details {
+			background: #f9f9f9;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+			margin-bottom: 15px;
+			
+			summary {
+				background: #f1f1f1;
+			}
+			.faq-answer {
+				background: #fff;
+			}
+		}
+	}
+
+	&.theme-bordered {
+		details {
+			border: 2px solid #eee;
+			border-radius: 4px;
+			margin-bottom: 15px;
+			
+			summary {
+				border-bottom: 2px solid transparent;
+			}
+			&[open] summary {
+				border-bottom-color: #eee;
+			}
+		}
+	}
+}

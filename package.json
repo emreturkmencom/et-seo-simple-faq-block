@@ -1,0 +1,14 @@
+{
+  "name": "et-seo-simple-faq-block",
+  "version": "1.0.0",
+  "description": "SEO Simple FAQ Block",
+  "author": "Emre Türkmen",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.0.0"
+  }
+}
