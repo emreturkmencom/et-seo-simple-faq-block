@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       SEO Simple FAQ Block
  * Description:       A lightweight, SEO-friendly Gutenberg FAQ block using HTML5 details/summary and auto JSON-LD schema.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Emre Türkmen
  * Author URI:        https://emreturkmen.com
  * Text Domain:       et-seo-simple-faq-block
