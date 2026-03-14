@@ -1,98 +1,139 @@
 .et-seo-faq-container {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
+	font-family: inherit;
 	
 	.wp-block-et-seo-simple-faq-block-faq-item {
-		margin-bottom: 10px;
+		margin-bottom: 0.75rem;
+		border: none;
+		background: transparent;
 	}
 
 	details {
 		width: 100%;
+		border-radius: 8px;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		overflow: hidden;
 		
 		summary {
 			cursor: pointer;
 			list-style: none;
 			position: relative;
-			padding: 15px 40px 15px 15px;
+			padding: 1.25rem 3.5rem 1.25rem 1.25rem;
 			font-weight: 600;
 			display: flex;
 			align-items: center;
-			transition: all 0.3s ease;
+			outline: none;
+			user-select: none;
 			
 			&::-webkit-details-marker {
 				display: none;
 			}
 			
 			&::after {
-				content: '+';
+				content: '';
 				position: absolute;
-				right: 15px;
+				right: 1.5rem;
 				top: 50%;
-				transform: translateY(-50%);
-				font-size: 20px;
+				width: 12px;
+				height: 12px;
+				border-right: 2px solid currentColor;
+				border-bottom: 2px solid currentColor;
+				transform: translateY(-70%) rotate(45deg);
 				transition: transform 0.3s ease;
+				opacity: 0.6;
 			}
 
 			.faq-question-text {
 				margin: 0;
-				font-size: 1.1em;
+				font-size: 1.15rem;
+				line-height: 1.4;
+				color: inherit;
 			}
 		}
 
-		&[open] summary::after {
-			content: '-';
-			transform: translateY(-50%) rotate(180deg);
+		&[open] {
+			summary {
+				&::after {
+					transform: translateY(-30%) rotate(-135deg);
+					opacity: 1;
+				}
+			}
 		}
 
 		.faq-answer {
-			padding: 15px;
+			padding: 0 1.25rem 1.5rem 1.25rem;
 			margin-top: 0;
-			border-top: 1px solid rgba(0,0,0,0.05);
+			line-height: 1.6;
+			opacity: 0.9;
+			font-size: 1rem;
 		}
 	}
 
-	// Themes
+	// --- Themes ---
+
 	&.theme-default {
 		details {
-			border-bottom: 1px solid #ddd;
-			summary {
-				padding-left: 0;
-			}
-			.faq-answer {
-				padding-left: 0;
-				border-top: none;
-			}
+			border-radius: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			summary { padding-left: 0; padding-right: 2.5rem; &::after { right: 0.5rem; } }
+			.faq-answer { padding-left: 0; padding-right: 0; }
 		}
 	}
 
 	&.theme-boxed {
 		details {
-			background: #f9f9f9;
-			border-radius: 8px;
-			overflow: hidden;
-			box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-			margin-bottom: 15px;
+			background: #ffffff;
+			box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+			margin-bottom: 1rem;
+			border: 1px solid rgba(0,0,0,0.03);
 			
-			summary {
-				background: #f1f1f1;
-			}
-			.faq-answer {
-				background: #fff;
-			}
+			summary { background: rgba(0,0,0,0.01); }
+			&[open] { box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
 		}
 	}
 
 	&.theme-bordered {
 		details {
-			border: 2px solid #eee;
-			border-radius: 4px;
-			margin-bottom: 15px;
+			border: 2px solid #f0f0f0;
+			margin-bottom: 1rem;
+			
+			&[open] { border-color: currentColor; }
+			summary { font-weight: 700; }
+		}
+	}
+
+	&.theme-dark {
+		background: #1a1a1a;
+		color: #ffffff;
+		padding: 1.5rem;
+		border-radius: 12px;
+
+		details {
+			background: #262626;
+			border: 1px solid #333;
+			margin-bottom: 0.75rem;
+			color: #eee;
 			
 			summary {
-				border-bottom: 2px solid transparent;
+				background: #2d2d2d;
+				&::after { border-color: #fff; }
 			}
-			&[open] summary {
-				border-bottom-color: #eee;
+			
+			.faq-answer {
+				color: #ccc;
+				border-top: 1px solid #333;
+				padding-top: 1rem;
 			}
 		}
+	}
+
+	// Support for Custom Colors chosen in Editor
+	&.has-background {
+		padding: 1.5rem;
+		border-radius: 12px;
+	}
+	
+	&.has-text-color {
+		details summary { color: inherit; }
 	}
 }

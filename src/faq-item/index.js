@@ -6,11 +6,12 @@ import { __ } from '@wordpress/i18n';
 import metadata from './block.json';
 
 registerBlockType(metadata.name, {
-	edit: ( { attributes, setAttributes } ) => {
+	edit: ( { attributes, setAttributes, context } ) => {
 		const { question, answer, headingTag } = attributes;
+		const accordionMode = context['et-seo-faq/accordionMode'];
+		const blockId = context['et-seo-faq/blockId'];
+		
 		const blockProps = useBlockProps();
-
-		const HeadingTag = headingTag;
 
 		return (
 			<>
@@ -31,7 +32,7 @@ registerBlockType(metadata.name, {
 					</PanelBody>
 				</InspectorControls>
 				<div { ...blockProps }>
-					<details open>
+					<details open name={ accordionMode && blockId ? blockId : undefined }>
 						<summary>
 							<RichText
 								tagName={ headingTag }
@@ -55,29 +56,5 @@ registerBlockType(metadata.name, {
 			</>
 		);
 	},
-	save: ( { attributes } ) => {
-		const { question, answer, headingTag } = attributes;
-		const blockProps = useBlockProps.save();
-		const HeadingTag = headingTag;
-
-		return (
-			<div { ...blockProps }>
-				<details>
-					<summary>
-						<RichText.Content
-							tagName={ headingTag }
-							className="faq-question-text"
-							value={ question }
-						/>
-					</summary>
-					<div className="faq-answer">
-						<RichText.Content
-							tagName="div"
-							value={ answer }
-						/>
-					</div>
-				</details>
-			</div>
-		);
-	},
+	save: () => null, // Dynamic block
 });

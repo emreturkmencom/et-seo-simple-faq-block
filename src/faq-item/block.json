@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "et-seo-simple-faq-block/faq-item",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"title": "FAQ Item",
 	"category": "widgets",
 	"icon": "minus",
@@ -12,19 +12,21 @@
 	"attributes": {
 		"question": {
 			"type": "string",
-			"source": "html",
-			"selector": ".faq-question-text"
+			"default": ""
 		},
 		"answer": {
 			"type": "string",
-			"source": "html",
-			"selector": ".faq-answer"
+			"default": ""
 		},
 		"headingTag": {
 			"type": "string",
 			"default": "h3"
 		}
 	},
+	"usesContext": [
+		"et-seo-faq/accordionMode",
+		"et-seo-faq/blockId"
+	],
 	"supports": {
 		"color": {
 			"background": true,
@@ -34,5 +36,6 @@
 			"fontSize": true
 		}
 	},
-	"editorScript": "file:./index.js"
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
 }

@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Simple FAQ Block\n"
+"POT-Creation-Date: 2026-03-14 12:00+0000\n"
+"PO-Revision-Date: 2026-03-14 12:10+0000\n"
+"Last-Translator: Emre Turkmen\n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: src/faq/index.js:25
+msgid "FAQ Settings"
+msgstr "Réglages FAQ"
+
+#: src/faq/index.js:28
+msgid "Theme Style"
+msgstr "Style du thème"
+
+#: src/faq/index.js:31
+msgid "Default"
+msgstr "Par défaut"
+
+#: src/faq/index.js:32
+msgid "Boxed"
+msgstr "Encadré"
+
+#: src/faq/index.js:33
+msgid "Bordered"
+msgstr "Bordé"
+
+#: src/faq/index.js:34
+msgid "Dark Modern"
+msgstr "Sombre moderne"
+
+#: src/faq/index.js:39
+msgid "Accordion Mode"
+msgstr "Mode accordéon"
+
+#: src/faq/index.js:40
+msgid "Only one item can be open at a time."
+msgstr "Un seul élément peut être ouvert à la fois."
+
+#: src/faq-item/index.js:25
+msgid "FAQ Item Settings"
+msgstr "Réglages de l'élément FAQ"
+
+#: src/faq-item/index.js:28
+msgid "Heading Tag"
+msgstr "Balise de titre"
+
+#: src/faq-item/index.js:52
+msgid "Enter question here..."
+msgstr "Entrez la question ici..."
+
+#: src/faq-item/index.js:62
+msgid "Enter answer here..."
+msgstr "Entrez la réponse ici..."

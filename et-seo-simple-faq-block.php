@@ -14,6 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 function et_seo_simple_faq_block_init() {
+	load_plugin_textdomain( 'et-seo-simple-faq-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+
 	register_block_type( __DIR__ . '/build/faq' );
 	register_block_type( __DIR__ . '/build/faq-item' );
 }

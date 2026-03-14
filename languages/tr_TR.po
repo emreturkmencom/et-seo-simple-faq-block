@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Simple FAQ Block\n"
+"POT-Creation-Date: 2026-03-14 12:00+0000\n"
+"PO-Revision-Date: 2026-03-14 12:05+0000\n"
+"Last-Translator: Emre Turkmen\n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: src/faq/index.js:25
+msgid "FAQ Settings"
+msgstr "SSS Ayarları"
+
+#: src/faq/index.js:28
+msgid "Theme Style"
+msgstr "Tema Stili"
+
+#: src/faq/index.js:31
+msgid "Default"
+msgstr "Varsayılan"
+
+#: src/faq/index.js:32
+msgid "Boxed"
+msgstr "Kutulu"
+
+#: src/faq/index.js:33
+msgid "Bordered"
+msgstr "Kenarlıklı"
+
+#: src/faq/index.js:34
+msgid "Dark Modern"
+msgstr "Modern Karanlık"
+
+#: src/faq/index.js:39
+msgid "Accordion Mode"
+msgstr "Akordiyon Modu"
+
+#: src/faq/index.js:40
+msgid "Only one item can be open at a time."
+msgstr "Aynı anda sadece bir öğe açık kalabilir."
+
+#: src/faq-item/index.js:25
+msgid "FAQ Item Settings"
+msgstr "SSS Öğe Ayarları"
+
+#: src/faq-item/index.js:28
+msgid "Heading Tag"
+msgstr "Başlık Etiketi"
+
+#: src/faq-item/index.js:52
+msgid "Enter question here..."
+msgstr "Soruyu buraya girin..."
+
+#: src/faq-item/index.js:62
+msgid "Enter answer here..."
+msgstr "Cevabı buraya girin..."

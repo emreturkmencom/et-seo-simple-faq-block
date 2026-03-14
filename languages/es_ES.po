@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Simple FAQ Block\n"
+"POT-Creation-Date: 2026-03-14 12:00+0000\n"
+"PO-Revision-Date: 2026-03-14 12:10+0000\n"
+"Last-Translator: Emre Turkmen\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+
+#: src/faq/index.js:25
+msgid "FAQ Settings"
+msgstr "Ajustes de PFA"
+
+#: src/faq/index.js:28
+msgid "Theme Style"
+msgstr "Estilo del tema"
+
+#: src/faq/index.js:31
+msgid "Default"
+msgstr "Predeterminado"
+
+#: src/faq/index.js:32
+msgid "Boxed"
+msgstr "Encuadrado"
+
+#: src/faq/index.js:33
+msgid "Bordered"
+msgstr "Bordeado"
+
+#: src/faq/index.js:34
+msgid "Dark Modern"
+msgstr "Oscuro moderno"
+
+#: src/faq/index.js:39
+msgid "Accordion Mode"
+msgstr "Modo acordeón"
+
+#: src/faq/index.js:40
+msgid "Only one item can be open at a time."
+msgstr "Solo se puede abrir un elemento a la vez."
+
+#: src/faq-item/index.js:25
+msgid "FAQ Item Settings"
+msgstr "Ajustes del elemento de PFA"
+
+#: src/faq-item/index.js:28
+msgid "Heading Tag"
+msgstr "Etiqueta de encabezado"
+
+#: src/faq-item/index.js:52
+msgid "Enter question here..."
+msgstr "Introduzca la pregunta aquí..."
+
+#: src/faq-item/index.js:62
+msgid "Enter answer here..."
+msgstr "Introduzca la respuesta aquí..."

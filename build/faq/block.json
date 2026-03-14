@@ -2,17 +2,28 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "et-seo-simple-faq-block/faq",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "SEO Simple FAQ",
   "category": "widgets",
   "icon": "editor-help",
   "description": "Add an SEO-friendly FAQ section with schema markup.",
   "textdomain": "et-seo-simple-faq-block",
   "attributes": {
+    "blockId": {
+      "type": "string"
+    },
     "styleTheme": {
       "type": "string",
       "default": "theme-default"
+    },
+    "accordionMode": {
+      "type": "boolean",
+      "default": true
     }
+  },
+  "providesContext": {
+    "et-seo-faq/accordionMode": "accordionMode",
+    "et-seo-faq/blockId": "blockId"
   },
   "supports": {
     "color": {
